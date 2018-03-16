@@ -32,6 +32,13 @@
       <version>1.4.0.RELEASE</version>
       <optional>true</optional>
     </dependency>
+      <!--lombok依赖-->
+      <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>1.16.20</version>
+          <scope>provided</scope>
+      </dependency>
   </dependencies>
   <build>
     <finalName>springbootDemo</finalName>
