@@ -1,6 +1,6 @@
 package azuray.DesignPattern.DecoratorPattern;
 
-public class MainShopping {
+public class MainDecorator {
     public static void main(String[] args) {
         Person teenger = new Teenger();
         System.out.println(teenger.getDescription());
