@@ -1,4 +1,4 @@
-package azuray.entity;
+package cn.azuray.entity;
 
 public enum RedisTokenEnum {
     LOGIN("Login:","用户登陆");

@@ -1,4 +1,4 @@
-package azuray.Exception;
+package cn.azuray.Exception;
 
 public class ProjectRuntimeExcption extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package azuray.Utils;
+package cn.azuray.Utils;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

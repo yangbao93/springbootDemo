@@ -1,6 +1,4 @@
-package azuray.common;
-
-import java.io.Serializable;
+package cn.azuray.commonResponse;
 
 public class CommonResponse implements ICommonResponse {
 

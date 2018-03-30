@@ -1,4 +1,4 @@
-package azuray.Algorithm;
+package cn.azuray.Algorithm;
 
 /**
  * 冒泡排序法

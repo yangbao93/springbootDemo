@@ -1,4 +1,4 @@
-package azuray.Algorithm;
+package cn.azuray.Algorithm;
 
 /**
  * 选择排序

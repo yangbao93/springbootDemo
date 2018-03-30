@@ -1,4 +1,4 @@
-package azuray.controller;
+package cn.azuray.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
@@ -15,15 +15,15 @@ import java.util.UUID;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import azuray.Exception.ProjectRuntimeExcption;
-import azuray.Utils.PasswordUtil;
-import azuray.common.CommonResponse;
-import azuray.common.ICommonResponse;
-import azuray.component.RedisService;
-import azuray.component.UserValidate;
-import azuray.entity.RedisTokenEnum;
-import azuray.entity.User;
-import azuray.service.IUserService;
+import cn.azuray.Exception.ProjectRuntimeExcption;
+import cn.azuray.Utils.PasswordUtil;
+import cn.azuray.commonResponse.CommonResponse;
+import cn.azuray.commonResponse.ICommonResponse;
+import cn.azuray.component.RedisService;
+import cn.azuray.component.UserValidate;
+import cn.azuray.entity.RedisTokenEnum;
+import cn.azuray.entity.User;
+import cn.azuray.service.IUserService;
 
 @RestController
 @RequestMapping("/userLogin")
@@ -47,7 +47,7 @@ public class LoginController {
             throw new ProjectRuntimeExcption("9999", "用户不存在");
         }
         // 验证密码正确性
-        boolean verifyPassword = PasswordUtil.verifyPassword(user.getPassword(), userDB.getPassword());
+        boolean verifyPassword = PasswordUtil.verifyPassword(user.getPassWord(), userDB.getPassWord());
         if (!verifyPassword) {
             throw new ProjectRuntimeExcption("9999", "用户密码不正确");
         }

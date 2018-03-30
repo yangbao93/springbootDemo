@@ -1,4 +1,4 @@
-package azuray.common;
+package cn.azuray.commonResponse;
 
 public interface ICommonResponse {
     public static final String SUCCESS_CODE = "0000";

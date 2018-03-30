@@ -1,8 +1,8 @@
-package azuray.service;
+package cn.azuray.service;
 
 import com.baomidou.mybatisplus.service.IService;
 
-import azuray.entity.User;
+import cn.azuray.entity.User;
 
 public interface IUserService extends IService<User> {
 
