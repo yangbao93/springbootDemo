@@ -8,6 +8,9 @@ public class CommonResponse implements ICommonResponse {
 
     private Object datas;
 
+    public CommonResponse() {
+
+    }
 
     public CommonResponse(String code, String msg) {
         this.code = code;

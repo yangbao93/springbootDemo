@@ -27,8 +27,10 @@ public class SysUserController {
         return new CommonResponse(ICommonResponse.FAIL_CODE, "操作失败");
     }
 
-    @RequestMapping(value = "1test",method = RequestMethod.POST)
-    public String test() {
-        return  "a";
+    @RequestMapping(value = "1test",method = RequestMethod.GET)
+    public CommonResponse test() {
+        User u = new User();
+        u.setPassWord("12312");
+        return new CommonResponse(ICommonResponse.FAIL_CODE, "操作失败",u);
     }
 }
