@@ -9,8 +9,6 @@ public class InsertSort {
 
         for (int i = 1; i < arr.length; i++) {
             for (int j = i; j > 0; j--) {
-                int temp1 = arr[j - 1];
-                int temp2 = arr[j];
                 if (arr[j] < arr[j - 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j - 1];
