@@ -10,7 +10,7 @@ import cn.azuray.entity.User;
 import cn.azuray.service.IUserService;
 
 @Service
-@Transactional
+@Transactional()
 public class UserServiceImpl extends ServiceImpl<UserDao, User> implements IUserService {
 
 //    @Autowired
